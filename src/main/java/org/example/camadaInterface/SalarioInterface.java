@@ -243,7 +243,7 @@ public class SalarioInterface {
     }
 
     public void removerDuplicidade(List<SalarioDTO> salarios) {
-        List<SalarioDTO> listaSemDuplicados = (List<SalarioDTO>) new TreeSet<>(salarios);
+        salariosList =  new ArrayList<>(salariosHashSet.stream().distinct().toList());
 
     }
 
